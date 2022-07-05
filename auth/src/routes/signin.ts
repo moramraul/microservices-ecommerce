@@ -3,9 +3,9 @@ import { Request, Response } from "express";
 import { User } from "../models/user";
 const router = express.Router()
 import { body, validationResult } from 'express-validator';
-import { RequestValidationError } from '../errors/request-validation-error';
-import { validateRequest } from '../middlewares/validate-request';
-import { BadRequestError } from '../errors/bad-request-error';
+import { RequestValidationError } from '@rmm811tickets/common';
+import { validateRequest } from '@rmm811tickets/common';
+import { BadRequestError } from '@rmm811tickets/common';
 import { Password } from '../services/password';
 const jwt = require("jsonwebtoken");
 

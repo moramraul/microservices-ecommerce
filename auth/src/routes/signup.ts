@@ -1,11 +1,11 @@
 import { Request, Response } from "express"
-import { RequestValidationError } from '../errors/request-validation-error';
-import { DatabaseConnectionError } from '../errors/database-connection-error';
+import { RequestValidationError } from '@rmm811tickets/common';
+import { DatabaseConnectionError } from '@rmm811tickets/common';
 const jwt = require("jsonwebtoken");
-import { validateRequest } from "../middlewares/validate-request";
+import { validateRequest } from '@rmm811tickets/common';
 import { User } from "../models/user";
 import { updateJsxExpression, updateSourceFile } from "typescript";
-import { BadRequestError } from "../errors/bad-request-error";
+import { BadRequestError } from '@rmm811tickets/common';
 const {validationResult, body } = require ('express-validator')
 const router = require("express").Router()
 
